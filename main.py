@@ -16,25 +16,25 @@ def karatsuba(u, v, n):
     return uv
 
 # cenario de testes 1: numeros pequenos
-print(karatsuba(12, 24, 2)) # deve retornar 408
+print("12 * 24 = " + str(karatsuba(12, 24, 2))) # deve retornar 408
 
 # cenario de testes 2: numeros pequenos
-print(karatsuba(7, 8, 1)) # deve retornar 56
+print("7 * 8 = " + str(karatsuba(7, 8, 1))) # deve retornar 56
 
 # cenario de testes 3: numeros grandes
-print(karatsuba(12345678, 87654321, 8)) # deve retornar 1082152022374638
+print("12345678 * 87654321 = " + str(karatsuba(12345678, 87654321, 8))) # deve retornar 1082152022374638
 
 # cenario de testes 4: numeros grandes
-print(karatsuba(9999991, 999983, 6)) # deve retornar 9999821000083
+print("9999991 * 999983 = " + str(karatsuba(9999991, 999983, 6))) # deve retornar 9999821000083
 
 # cenario de testes 5: potencias de 10
-print(karatsuba(12345, 10000, 5)) # deve retornar 123450000
+print("12345 * 10000 = " + str(karatsuba(12345, 10000, 5))) # deve retornar 123450000
 
 # cenario de testes 6: potencias de 10
-print(karatsuba(10000, 10000, 5)) # deve retornar 100000000
+print("10000 * 10000 = " + str(karatsuba(10000, 10000, 5))) # deve retornar 100000000
 
 # cenario de teste 7: numeros negativos
-print(karatsuba(1234, -5678, 4)) # deve retornar -7006652
+print("1234 * (-5678) = " + str(karatsuba(1234, -5678, 4))) # deve retornar -7006652
 
 # cenario de teste 8: numeros negativos
-print(karatsuba(-1234, -5678, 4)) # deve retornar 7006652
+print("(-1234) * (-5678) = " + str(karatsuba(-1234, -5678, 4))) # deve retornar 7006652
