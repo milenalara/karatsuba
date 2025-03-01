@@ -32,19 +32,19 @@ Ambos os números são decompostos em duas partes:
 
 Ou seja:
 
-![alt text](image.png)
+![alt text](./img/image.png)
 
-![alt text](image-1.png)
+![alt text](./img/image-1.png)
 
 Assim temos que:
 
-![alt text](image-2.png)
+![alt text](./img/image-2.png)
 
 Podemos chamar u de p + q
 E chamar v de r + s
 Desta forma, temos que a multiplicaçao u * v pode ser representada como:
 
-![alt text](image-3.png)
+![alt text](./img/image-3.png)
 
 *u* * *v* = *p* * *r* * (10 ^ *n*) + (*p* * *s* + *q* * *r*) * (10 ^ (*n*/2)) + *q* * *s*
 
@@ -52,10 +52,10 @@ Essa expressão representa a fase de conquista do algoritmo, que irá se chamar 
 
 Portanto, a expressão pode ser reescrita como:
 
-![alt text](image-4.png)
+![alt text](./img/image-4.png)
 
 Denotando m como o arrendodamento para cima de n/2, temos a fórmula a seguir, que foi transcrita em algoritmo no arquivo `main.py`:
-![alt text](image-5.png)
+![alt text](./img/image-5.png)
 
 ## Saída da Execução
 ```
@@ -108,7 +108,7 @@ __Arestas:__
 
 ### Grafo de fluxo
 
-![alt text](image-6.png)
+![alt text](./img/image-6.png)
 
 ### Cálculo de complexidade ciclomática
 
@@ -128,7 +128,7 @@ M = 1
 
 Como o algoritmo de Karatsuba utiliza uma estratégia de dividir e conquistar, podemos utilizar o teorema mestre para recorrências de divisão e conquista, dado por:
 
-![alt text](image-7.png)
+![alt text](./img/image-7.png)
 
 Em que:
 a = Número de subproblemas gerados em cada chamada recursiva.
@@ -144,19 +144,20 @@ No caso do algoritmo de Karatsuba, temos:
 
 Pelo Teorema, temos que:
 
-![alt text](image-8.png)
+![alt text](./img/image-8.png)
 
 
 Ou seja:
 
 T(n) = O(n ^(log2 (3)))
+
 T(n) = O(n ^ 1.585)
 
 ## Documentação e links úteis
 
-[Análise de Algoritmos: Karatsuba - Multiplicação de números grandes. Paulo Feofiloff, IME - USP](https://www.ime.usp.br/~pf/analise_de_algoritmos/aulas/karatsuba.html)
-[Brilliant.org - Wiki: Karatsuba Algorithm](https://brilliant.org/wiki/karatsuba-algorithm/#complexity-of-karatsuba)
-[](https://pt.wikipedia.org/wiki/Teorema_mestre_(an%C3%A1lise_de_algoritmos))
+- [Análise de Algoritmos: Karatsuba - Multiplicação de números grandes. Paulo Feofiloff, IME - USP](https://www.ime.usp.br/~pf/analise_de_algoritmos/aulas/karatsuba.html)
+- [Brilliant.org - Wiki: Karatsuba Algorithm](https://brilliant.org/wiki/karatsuba-algorithm/#complexity-of-karatsuba)
+- [Wikipedia: Teorema Mestre - análise de algoritmos](https://pt.wikipedia.org/wiki/Teorema_mestre_(an%C3%A1lise_de_algoritmos))
 
 ## Licença
 Este projeto está licenciado sob a Licença MIT.
